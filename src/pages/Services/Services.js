@@ -14,7 +14,7 @@ const Services = () => {
   return (
     <div className="  ">
       <div className="text-center py-6">
-        <p className="text-orange-400 text-2xl py-2  service-t ">Service</p>
+        {/* <p className="text-orange-400 text-2xl py-2  service-t ">Service</p> */}
         <h2 className="text-5xl font-semibold services-h">Our Service </h2>
         
       </div>

@@ -7,7 +7,7 @@ const ServiceCard = ({ service }) => {
     <div className="">
       <div className="card card-compact w-96 bg-base-100 shadow-xl h-full">
         <figure className="rounded-lg">
-          <img className="img-h rounded-lg" src={img} alt="Shoes" />
+          <img className="img-h rounded-lg w-full h-72" src={img} alt="Shoes" />
         </figure>
         <div className="card-body">
           <h2 className="card-title text-3xl">{title}</h2>
@@ -28,7 +28,7 @@ const ServiceCard = ({ service }) => {
           </p>
           <div className="card-actions justify-end">
            <Link to = {`/services/${_id}`}>
-           <button className="text-orange-400 hover:text-orange-600">
+           <button className="text-orange-400 hover:text-orange-600 btn btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

@@ -13,6 +13,7 @@ import {
   themes,
 } from "../../../Context/AuthProvider/ThemeContext";
 
+import img3 from "../../../assets/banner/img-4.jpg";
 const Header = () => {
   const { user, logout } = useContext(AuthContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ const Header = () => {
             title="Cooking Stove"
             className="inline-flex items-center"
           >
-            {/* <img className="w-6 h-6 mr-1" src={pic} alt="" /> */}
+            <img className="w-6 h-6 mr-1" src={img3} alt="" />
 
             <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
               Cooking Stove

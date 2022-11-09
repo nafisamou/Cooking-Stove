@@ -19,7 +19,7 @@ const ServiceAll = ({ service }) => {
             </p>
             <div className="card-actions justify-end">
               <Link to={`/services/${_id}`}>
-                <button className="text-orange-400 hover:text-orange-600">
+                <button className="text-orange-400 hover:text-orange-600 btn btn-ghost">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

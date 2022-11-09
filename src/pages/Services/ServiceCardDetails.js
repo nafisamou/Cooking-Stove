@@ -37,14 +37,11 @@ const ServiceCardDetails = () => {
                 <span className="ml-1">{rating}</span>
               </p>
             </p>
-            <div className="card-actions justify-end">
+            {/* <div className="card-actions justify-end">
               <Link to={`/checkout/${_id}`}>
-                {" "}
-                {/* <button className="btn btn-primary">
-                Get Premium Access <FaLock className="ml-3"></FaLock>
-              </button> */}
+               
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
