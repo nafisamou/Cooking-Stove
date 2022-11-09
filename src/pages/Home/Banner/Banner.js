@@ -1,4 +1,5 @@
 import React from "react";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 import img1 from "../../../assets/banner/img-1.jpg";
 import img2 from "../../../assets/banner/img-2.jpg";
 import img3 from "../../../assets/banner/img-3.jpg";
@@ -34,46 +35,100 @@ const Banner = () => {
         </button>
         <div className="flex items-center justify-start w-full h-full gap-6 py-4 mx-auto overflow-auto lg:gap-8">
           <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-            <img
+            {/* <img
               className="object-cover object-center h-96 aspect-square dark:bg-gray-500"
               src={img1}
               alt="Img-1"
-            />
+            /> */}
+            <PhotoProvider>
+              <PhotoView src={img1}>
+                <img
+                  src={img1}
+                  alt=""
+                  className="block  object-center w-full rounded-md h-96  cursor: zoom-in object-cover aspect-square dark:bg-gray-500"
+                />
+              </PhotoView>
+            </PhotoProvider>
           </div>
           <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-            <img
+            {/* <img
               className="object-cover object-center h-96 aspect-square dark:bg-gray-500"
               src={img2}
               alt="Img-2"
-            />
+            /> */}
+            <PhotoProvider>
+              <PhotoView src={img2}>
+                <img
+                  src={img2}
+                  alt=""
+                  className="block  object-center w-full rounded-md h-96  cursor: zoom-in object-cover aspect-square dark:bg-gray-500"
+                />
+              </PhotoView>
+            </PhotoProvider>
           </div>
           <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-            <img
+            {/* <img
               className="object-cover object-center h-96 aspect-square dark:bg-gray-500"
               src={img3}
               alt="Img-3"
-            />
+            /> */}
+            <PhotoProvider>
+              <PhotoView src={img3}>
+                <img
+                  src={img3}
+                  alt=""
+                  className="block  object-center w-full rounded-md h-96  cursor: zoom-in object-cover aspect-square dark:bg-gray-500"
+                />
+              </PhotoView>
+            </PhotoProvider>
           </div>
           <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-            <img
+            {/* <img
               className="object-cover object-center h-96 aspect-square dark:bg-gray-500"
               src={img4}
               alt="Img-4"
-            />
+            /> */}
+            <PhotoProvider>
+              <PhotoView src={img4}>
+                <img
+                  src={img4}
+                  alt=""
+                  className="block  object-center w-full rounded-md h-96  cursor: zoom-in object-cover aspect-square dark:bg-gray-500"
+                />
+              </PhotoView>
+            </PhotoProvider>
           </div>
           <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-            <img
+            {/* <img
               className="object-cover object-center h-96 aspect-square dark:bg-gray-500"
               src={img5}
               alt="Img-5"
-            />
+            /> */}
+            <PhotoProvider>
+              <PhotoView src={img5}>
+                <img
+                  src={img5}
+                  alt=""
+                  className="block  object-center w-full rounded-md h-96  cursor: zoom-in object-cover aspect-square dark:bg-gray-500"
+                />
+              </PhotoView>
+            </PhotoProvider>
           </div>
           <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-            <img
+            {/* <img
               className="object-cover object-center h-96 aspect-square dark:bg-gray-500"
               src={img6}
               alt="Img-6"
-            />
+            /> */}
+            <PhotoProvider>
+              <PhotoView src={img6}>
+                <img
+                  src={img6}
+                  alt=""
+                  className="block  object-center w-full rounded-md h-96  cursor: zoom-in object-cover aspect-square dark:bg-gray-500"
+                />
+              </PhotoView>
+            </PhotoProvider>
           </div>
         </div>
         <button

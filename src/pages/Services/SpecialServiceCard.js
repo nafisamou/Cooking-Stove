@@ -1,15 +1,31 @@
 import React from "react";
-
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 const SpecialServiceCard = ({ service }) => {
   const { img1, price, title, _id, details, quantity } = service;
   return (
     <div className="">
       <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-        <img
+        {/* <img
           className="absolute object-cover w-full h-full rounded"
           src={img1}
           alt="Person"
-        />
+        /> */}
+         <PhotoProvider
+            speed={() => 800}
+            easing={(type) =>
+              type === 2
+                ? "cubic-bezier(0.36, 0, 0.66, -0.56)"
+                : "cubic-bezier(0.34, 1.56, 0.64, 1)"
+            }
+          >
+            <PhotoView src={img1}>
+              <img
+                src={img1}
+                alt=""
+                className="block absolute object-cover object-center w-full rounded-md h-full dark:bg-gray-500 cursor: zoom-in"
+              />
+            </PhotoView>
+          </PhotoProvider>
       </div>
       <div className="flex flex-col sm:text-center">
         <p className="text-lg font-bold">{title}</p>
