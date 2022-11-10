@@ -25,29 +25,9 @@ const Review = () => {
       .then((data) => setReviews(data));
   }, [user?.email, logOut]);
 
-  /* const handleStatusUpdate = (id) => {
-    fetch(`https://server-nafisamou.vercel.app/reviews/${id}`, {
-      method: "PATCH",
-      headers: {
-        "content-type": "application/json",
-        authorization: `Bearer ${localStorage.getItem("kitchen-token")}`,
-      },
-      body: JSON.stringify({ status: "Approved" }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-
-        if (data.modifiedCount > 0) {
-          const remaining = reviews.filter((order) => order._id !== id);
-          const approving = reviews.find((order) => order._id === id);
-          approving.status = "Approved";
-          const newReviews = [approving, ...remaining];
-          navigate(`edit/${id}`);
-          setReviews(newReviews);
-        }
-      });
-  }; */
+  const handleEdit = (id)=>{
+    // navigate(`/reviews/${id}`)
+  }
 
   const handleDelete = (id) => {
     const proceed = window.confirm(
@@ -97,7 +77,7 @@ const Review = () => {
                 key={review._id}
                 review={review}
                 handleDelete={handleDelete}
-                // handleStatusUpdate={handleStatusUpdate}
+                handleEdit={handleEdit}
               ></ReviewDetails>
             ))}
           </tbody>

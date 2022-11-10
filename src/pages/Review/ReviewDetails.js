@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const ReviewDetails = ({ review, handleDelete, handleStatusUpdate }) => {
+const ReviewDetails = ({ review, handleDelete, handleEdit }) => {
   const {
     serviceName,
     customer,
@@ -62,7 +62,7 @@ const ReviewDetails = ({ review, handleDelete, handleStatusUpdate }) => {
       <td>
         <Link
           to={`/edit/${_id}`}
-          onClick={() => handleStatusUpdate(_id)}
+          onClick={() => handleEdit(_id)}
           className="btn  bg-red-500 text-white btn-xs"
         >
           {/* {status ? status : "Pending"} */}
