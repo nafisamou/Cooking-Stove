@@ -1,9 +1,9 @@
-# E-learning platform Client-side Repository:
+# Review Client-side Repository:
 
 
 
 # Live Link
-* Hosted in Firebase ->[E-learning platform](https://programming-language-course.web.app//)
+* Hosted in Firebase ->[Cooking-Stove](https://cloud-kitchen-9bfe0.web.app/)
 
 # Context API
 
@@ -15,13 +15,13 @@
 # Resources & Credits :
 * Tailwind Components -> [Tailwind](https://tailwindcss.com/docs/installation)
 * [Daisy UI](https://daisyui.com/)
+* MambaUI -> (https://mambaui.com/components/review)
+* Kitwind -> (https://kitwind.io/products/kometa/components)
 
 # Hosting : 
 * Firebase -> [Hosting](https://console.firebase.google.com/u/0/project/programming-language-course/hosting/sites)
 
 # Other Resources -->
-* React Accessible Accordian: [React-Accordian](https://www.npmjs.com/package/react-accessible-accordion)
-* React to pdf pacakage: [React to Pdf](https://www.npmjs.com/package/react-to-pdf)
 * Svg -> [HeroIcon](https://kaleidoscopic-pika-4681e2.netlify.app/)
 * Icon -> [FlatIcon](https://www.flaticon.com/)
 * Lottifiles -> [Programming.json](https://lottiefiles.com/)
