@@ -14,7 +14,7 @@
 
 # Resources & Credits :
 * Tailwind Components -> [Tailwind](https://tailwindcss.com/docs/installation)
-* [Daisy UI](https://daisyui.com/)
+* Daisy UI -> [Daisy UI](https://daisyui.com/)
 * MambaUI -> (https://mambaui.com/components/review)
 * Kitwind -> (https://kitwind.io/products/kometa/components)
 
