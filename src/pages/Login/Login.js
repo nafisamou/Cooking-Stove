@@ -31,7 +31,7 @@ const Login = () => {
         };
         console.log(currentUser);
         // get jwt token
-        fetch("http://localhost:5000/jwt", {
+        fetch("https://server-nafisamou.vercel.app/jwt", {
           method: "POST",
           headers: {
             "content-type": "application/json",
@@ -62,7 +62,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(result.user);
-        setAuthToken(user)
+        setAuthToken(user);
         navigate(from, { replace: true });
       })
       .catch((error) => {

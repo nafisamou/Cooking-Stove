@@ -4,7 +4,7 @@ import SpecialServiceCard from "./SpecialServiceCard";
 const SpecialService = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/specialServicesAll")
+    fetch("https://server-nafisamou.vercel.app/specialServicesAll")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);

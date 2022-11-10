@@ -56,7 +56,7 @@ const Header = () => {
               </NavLink>
             </li>
 
-            <li>
+            {/* <li>
               <NavLink
                 to="/addService"
                 aria-label="service"
@@ -69,8 +69,8 @@ const Header = () => {
               >
                 Add Service
               </NavLink>
-            </li>
-            <li>
+            </li> */}
+         {/*    <li>
               <NavLink
                 to="/reviews"
                 aria-label="reviews"
@@ -83,7 +83,7 @@ const Header = () => {
               >
                 My Review
               </NavLink>
-            </li>
+            </li> */}
             {/* <li>
               <NavLink
                 to="/faq"
@@ -124,6 +124,34 @@ const Header = () => {
                     >
                       Log Out
                     </button>
+                    <span className="mx-4">
+                    <NavLink
+                to="/reviews"
+                aria-label="reviews"
+                title="reviews"
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 text-xl"
+                }
+              >
+                My Review
+              </NavLink>
+                    </span>
+                    <span className="mx-2">
+                    <NavLink
+                to="/addService"
+                aria-label="service"
+                title="service"
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 text-xl"
+                }
+              >
+                Add Service
+              </NavLink>
+                    </span>
                   </>
                 ) : (
                   <>
@@ -145,6 +173,7 @@ const Header = () => {
                         Register
                       </Link>
                     </span>
+                   
                   </>
                 )}
               </div>

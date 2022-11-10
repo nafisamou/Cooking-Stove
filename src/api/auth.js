@@ -1,12 +1,10 @@
-
 export const setAuthToken = (user) => {
- 
   const currentUser = {
     email: user.email,
   };
   console.log(currentUser);
   // get jwt token
-  fetch("http://localhost:5000/jwt", {
+  fetch("https://server-nafisamou.vercel.app/jwt", {
     method: "POST",
     headers: {
       "content-type": "application/json",
@@ -18,7 +16,5 @@ export const setAuthToken = (user) => {
       console.log(data);
       // local storage is easiest but not the best place to jwt store token.
       localStorage.setItem("kitchen-token", data.token);
- 
     });
 };
-

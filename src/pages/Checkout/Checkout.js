@@ -30,7 +30,7 @@ const Checkout = () => {
     if (phone.length > 11 && phone.length < 11) {
       toast.error("Phone number should be 11 characters");
     } else {
-      fetch("http://localhost:5000/reviews", {
+      fetch("https://server-nafisamou.vercel.app/reviews", {
         method: "POST",
         headers: {
           "content-type": "application/json",

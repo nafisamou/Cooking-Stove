@@ -1,120 +1,259 @@
-import React from 'react';
+import React from "react";
 
 const About = () => {
-    return (
-        <div>
-           <section className="dark:bg-gray-800 dark:text-gray-100">
-	<div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
-		<div>
-			<h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-50">Aliquip definiebas ad est</h2>
-			<p className="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-400">Quando cetero his ne, eum admodum sapientem ut.</p>
-		</div>
-		<div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-			<div>
-				<h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-50">Ad vix debet docendi</h3>
-				<p className="mt-3 text-lg dark:text-gray-400">Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.</p>
-				<div className="mt-12 space-y-12">
-					<div className="flex">
-						<div className="flex-shrink-0">
-							<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
-									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-								</svg>
-							</div>
-						</div>
-						<div className="ml-4">
-							<h4 className="text-lg font-medium leading-6 dark:text-gray-50">Per ei quaeque sensibus</h4>
-							<p className="mt-2 dark:text-gray-400">Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.</p>
-						</div>
-					</div>
-					<div className="flex">
-						<div className="flex-shrink-0">
-							<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
-									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-								</svg>
-							</div>
-						</div>
-						<div className="ml-4">
-							<h4 className="text-lg font-medium leading-6 dark:text-gray-50">Cu imperdiet posidonium sed</h4>
-							<p className="mt-2 dark:text-gray-400">Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.</p>
-						</div>
-					</div>
-					<div className="flex">
-						<div className="flex-shrink-0">
-							<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
-									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-								</svg>
-							</div>
-						</div>
-						<div className="ml-4">
-							<h4 className="text-lg font-medium leading-6 dark:text-gray-50">Nulla omittam sadipscing mel ne</h4>
-							<p className="mt-2 dark:text-gray-400">At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div aria-hidden="true" className="mt-10 lg:mt-0">
-				<img src="https://source.unsplash.com/random/360x480" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
-			</div>
-		</div>
-		<div>
-			<div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-				<div className="lg:col-start-2">
-					<h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-50">Eam nibh gloriatur ex</h3>
-					<p className="mt-3 text-lg dark:text-gray-400">Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nibh dissentias, mei exerci tamquam euripidis cu.</p>
-					<div className="mt-12 space-y-12">
-						<div className="flex">
-							<div className="flex-shrink-0">
-								<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
-										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-									</svg>
-								</div>
-							</div>
-							<div className="ml-4">
-								<h4 className="text-lg font-medium leading-6 dark:text-gray-50">Cibo augue offendit has ad</h4>
-								<p className="mt-2 dark:text-gray-400">An per velit appellantur, ut utinam minimum nominavi sit, odio nostro habemus ne nec. Ne sonet regione contentiones est.</p>
-							</div>
-						</div>
-						<div className="flex">
-							<div className="flex-shrink-0">
-								<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
-										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-									</svg>
-								</div>
-							</div>
-							<div className="ml-4">
-								<h4 className="text-lg font-medium leading-6 dark:text-gray-50">At eum ferri luptatum lobortis</h4>
-								<p className="mt-2 dark:text-gray-400">Te per quidam maiorum ocurreret, etiam delicatissimi usu ad. Ne has quod periculis. Te sit primis iisque efficiantur.</p>
-							</div>
-						</div>
-						<div className="flex">
-							<div className="flex-shrink-0">
-								<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
-										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-									</svg>
-								</div>
-							</div>
-							<div className="ml-4">
-								<h4 className="text-lg font-medium leading-6 dark:text-gray-50">Dicunt verterem evertitur eu sea</h4>
-								<p className="mt-2 dark:text-gray-400">Audire principes rationibus eam an, autem nominavi luptatum per te. Sumo fabulas vim eu, sonet saperet eleifend ut vix.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
-					<img src="https://source.unsplash.com/random/361x481" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+  return (
+    <div>
+      <section className="dark:bg-gray-800 dark:text-gray-100">
+        <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
+          <div>
+            <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-50">
+              My Special Items
+            </h2>
+            <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-gray-400 font-sans">
+              The art of cooking is a popular one, and foodie culture has gotten
+              a huge boost from the Internet and the proliferation of food
+              websites and magazines.
+            </p>
+          </div>
+          <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+            <div>
+              <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-50">
+                Chicken Fry
+              </h3>
+              <p className="mt-3 text-lg dark:text-gray-400">
+                Years ago, when I started making this chicken fry recipe, I was
+                confident that this was going to be a huge hit. And, guess what?
+                It is a hero dish at our table till date and will be the hero
+                forever.
+              </p>
+              <div className="mt-12 space-y-12">
+                <div className="flex">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        className="w-7 h-7"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-lg font-medium leading-6 dark:text-gray-50">
+                      Southern fried chicken
+                    </h4>
+                    <p className="mt-2 dark:text-gray-400">
+                      Southern fried chicken is a signature of the United
+                      States. Brined in buttermilk, the chicken tenderizes
+                      before being coated in seasoned flour, then fried crisp
+                      and golden brown.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        className="w-7 h-7"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-lg font-medium leading-6 dark:text-gray-50">
+                      Nashville hot chicken
+                    </h4>
+                    <p className="mt-2 dark:text-gray-400">
+                      Fried chicken remains a celebrated dish in communities
+                      across America that comforts and brings people together.
+                      Whether packed in a greasy takeout box, piled high on a
+                      tray at a family reunion, or lovingly made at home for a
+                      weekend dinner, Southern fried chicken is an icon of
+                      American cooking.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        className="w-7 h-7"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M5 13l4 4L19 7"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-lg font-medium leading-6 dark:text-gray-50">
+                      Korean Fried Chicken
+                    </h4>
+                    <p className="mt-2 dark:text-gray-400">
+                    Chicken karaage, or Japanese fried chicken, uses skin-on chicken thighs marinated in ginger, garlic, soy sauce, and sake. The thighs are then dredged in potato starch and deep fried, creating a crispy, golden brown outer coating similar to tempura.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div aria-hidden="true" className="mt-10 lg:mt-0">
+              <img
+                src="https://media.30seconds.com/tip/lg/Fried-Chicken-Recipes-How-to-Make-Classic-Skillet-fried-Ch-14344-fd5f23bd88-1625545998.jpg"
+                alt=""
+                className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 w-[480px] h-[480px] object-center"
+              />
+            </div>
+          </div>
+          <div>
+            <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+              <div className="lg:col-start-2">
+                <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-50">
+                  Chicken shawarma
+                </h3>
+                <p className="mt-3 text-lg dark:text-gray-400">
+                  Shawarma is vastly popular across the middle-east, specially
+                  Lebanon. Now, a popular street food as well, chicken shawarma
+                  has quickly garnered appreciation across the globe,
+                  particularly in India. You can prepare this easy shawarma at
+                  home as a side dish for brunch or for evening snacks.
+                </p>
+                <div className="mt-12 space-y-12">
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          className="w-7 h-7"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M5 13l4 4L19 7"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="ml-4">
+                      <h4 className="text-lg font-medium leading-6 dark:text-gray-50">
+                        Vegan Mushroom Shawarma
+                      </h4>
+                      <p className="mt-2 dark:text-gray-400">
+                        Traditional chicken shawarma is basically well-marinated
+                        chicken, layered on a vertical rotisserie or spit where
+                        it's slow-roasted for days--in its own juices and
+                        fat--until perfectly tender and extra flavorful!
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          className="w-7 h-7"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M5 13l4 4L19 7"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="ml-4">
+                      <h4 className="text-lg font-medium leading-6 dark:text-gray-50">
+                        Chicken Shawarma Wraps
+                      </h4>
+                      <p className="mt-2 dark:text-gray-400">
+                        This is one of my signature recipes that will be very
+                        familiar to all my friends because I make this so often.
+                        It’s off the charts for effort vs output: just a handful
+                        of everyday spices, garlic, a splash of lemon and olive
+                        oil transforms into the most incredible flavour.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          className="w-7 h-7"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M5 13l4 4L19 7"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="ml-4">
+                      <h4 className="text-lg font-medium leading-6 dark:text-gray-50">
+                        Oven Roasted Chicken Shawarma
+                      </h4>
+                      <p className="mt-2 dark:text-gray-400">
+                        When this chicken is cooking, the smell is incredible.
+                        In fact, it’s how I met most of my neighbours when I
+                        lived in a townhouse complex, random people I had never
+                        met before popping their head over the fence wanting to
+                        know what on earth I was making. They were elated when I
+                        handed out samples!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
+                <img
+                  src="https://publish.purewow.net/wp-content/uploads/sites/2/2018/03/mini-chicken-shawarma-recipe-hero.jpg?resize=636%2C460"
+                  alt=""
+                  className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 h-[481px] w-[481px] object-center"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-    );
+      </section>
+    </div>
+  );
 };
 
 export default About;

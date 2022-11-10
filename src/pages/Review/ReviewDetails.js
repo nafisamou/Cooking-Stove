@@ -16,7 +16,7 @@ const ReviewDetails = ({ review, handleDelete, handleStatusUpdate }) => {
   } = review;
   const [reviewDetails, setReviewDetails] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${service}`)
+    fetch(`https://server-nafisamou.vercel.app/services/${service}`)
       .then((res) => res.json())
       .then((data) => setReviewDetails(data));
   }, [service]);
@@ -60,7 +60,8 @@ const ReviewDetails = ({ review, handleDelete, handleStatusUpdate }) => {
         <span className="">{message}</span>
       </td>
       <td>
-        <Link to={`/edit/${_id}`}
+        <Link
+          to={`/edit/${_id}`}
           onClick={() => handleStatusUpdate(_id)}
           className="btn  bg-red-500 text-white btn-xs"
         >

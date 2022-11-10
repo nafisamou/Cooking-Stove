@@ -30,12 +30,12 @@ export const routes = createBrowserRouter([
       {
         path: "/services/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(`https://server-nafisamou.vercel.app/services/${params.id}`),
         element: <ServiceCardDetails></ServiceCardDetails>,
       },
       {
         path: "/services",
-        loader: () => fetch("http://localhost:5000/servicesAll"),
+        loader: () => fetch("https://server-nafisamou.vercel.app/servicesAll"),
         element: <ServiceAllLoader></ServiceAllLoader>,
       },
       {
@@ -48,13 +48,14 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/edit/:id",
-        loader: ({params}) => fetch(`http://localhost:5000/reviews/${params.id}`),
+        loader: ({ params }) =>
+          fetch(`https://server-nafisamou.vercel.app/reviews/${params.id}`),
         element: <Edit></Edit>,
       },
       {
         path: "/checkout/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(`https://server-nafisamou.vercel.app/services/${params.id}`),
         element: <Checkout></Checkout>,
       },
 
