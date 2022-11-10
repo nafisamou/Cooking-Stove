@@ -115,7 +115,11 @@ const About = () => {
                       Korean Fried Chicken
                     </h4>
                     <p className="mt-2 dark:text-gray-400">
-                    Chicken karaage, or Japanese fried chicken, uses skin-on chicken thighs marinated in ginger, garlic, soy sauce, and sake. The thighs are then dredged in potato starch and deep fried, creating a crispy, golden brown outer coating similar to tempura.
+                      Chicken karaage, or Japanese fried chicken, uses skin-on
+                      chicken thighs marinated in ginger, garlic, soy sauce, and
+                      sake. The thighs are then dredged in potato starch and
+                      deep fried, creating a crispy, golden brown outer coating
+                      similar to tempura.
                     </p>
                   </div>
                 </div>
