@@ -14,7 +14,7 @@ export const setAuthToken = (user) => {
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
-      // local storage is easiest but not the best place to jwt store token  sss.
+      // local storage is easiest but not the best place to jwt store token  ssssss.
       localStorage.setItem("kitchen-token", data.token);
     });
 };
