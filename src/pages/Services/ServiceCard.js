@@ -9,7 +9,7 @@ const ServiceCard = ({ service }) => {
     <div className="">
       <div className="card card-compact w-96 bg-base-100 shadow-xl h-full">
         <figure className="rounded-lg">
-          {/* <img className="img-h rounded-lg w-full h-72" src={img} alt="Shoes" /> */}
+          
           <PhotoProvider
             speed={() => 800}
             easing={(type) =>

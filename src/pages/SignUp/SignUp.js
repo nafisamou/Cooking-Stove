@@ -4,11 +4,10 @@ import toast from "react-hot-toast";
 import useTitle from "../Hooks/useTitle";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import img5 from "../../assets/banner/img-5.jpg"
+import { setAuthToken } from "../../api/auth";
 
 const SignUp = () => {
   const [showPass, setShowPass] = useState(false);
-  // const [error, setError] = useState("");
-  // const [user, setUser] = useState(null);
   const [accepted, setAccepted] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
@@ -17,9 +16,8 @@ const SignUp = () => {
   const {
     createUser,
     updateUserProfile,
-
     signInWithGoogle,
-    //   signInWithGitHub,
+ 
   } = useContext(AuthContext);
 
   const handleSubmit = (event) => {
@@ -35,7 +33,7 @@ const SignUp = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        //   setError("");
+        setAuthToken(user);
         form.reset();
         handleUpdateUserProfile(name, photoURL);
 
@@ -71,20 +69,7 @@ const SignUp = () => {
       .catch((error) => toast.error(error.message));
   };
 
-  // // Github SignIn
-  // const handleGithubSignIn = () => {
-  //   signInWithGitHub()
-  //     .then((result) => {
-  //       const user = result.user;
-  //       setUser(user);
-  //       console.error(user);
-  //       navigate(from, { replace: true });
-  //     })
-  //     .catch((error) => {
-  //       toast.error(error.message);
-  //     });
-  // };
-
+  
   const handleAccepted = (event) => {
     setAccepted(event.target.checked);
   };

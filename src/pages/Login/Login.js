@@ -6,22 +6,16 @@ import toast from "react-hot-toast";
 import useTitle from "../Hooks/useTitle";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import img3 from "../../assets/banner/img-3.jpg";
+import { setAuthToken } from "../../api/auth";
 const Login = () => {
   const navigate = useNavigate();
   const [showPass, setShowPass] = useState(false);
   const [userEmail, setUserEmail] = useState("");
-  //   const [error, setError] = useState("");
-  //   const [user, setUser] = useState({});
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
   useTitle("Login");
-  const {
-    signInWithGoogle,
-    resetPassword,
-    signInWithGitHub,
-    signIn,
-    setLoading,
-  } = useContext(AuthContext);
+  const { signInWithGoogle, resetPassword, signIn, setLoading } =
+    useContext(AuthContext);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -36,16 +30,26 @@ const Login = () => {
           email: user.email,
         };
         console.log(currentUser);
-        // setError("");
+        // get jwt token
+        fetch("http://localhost:5000/jwt", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(currentUser),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            // local storage is easiest but not the best place to jwt store token.
+            localStorage.setItem("kitchen-token", data.token);
+            navigate(from, { replace: true });
+          });
+
         form.reset();
-        navigate(from, { replace: true });
       })
       .catch((error) => {
         toast.error(error.message);
-        // const errorCode = error.code;
-        // const errorMessage = error.message;
-        // console.error(errorCode, errorMessage);
-        // setError(error.message);
       })
       .finally(() => {
         setLoading(false);
@@ -56,23 +60,9 @@ const Login = () => {
   const handleGoogleSignIn = () => {
     signInWithGoogle()
       .then((result) => {
-        console.log(result.user);
-        navigate(from, { replace: true });
-      })
-      .catch((error) => {
-        // const message = error.message;
-        // const code = error.code;
-        // console.error(message, code);
-        toast.error(error.message);
-      });
-  };
-  // Github SignIn
-  const handleGithubSignIn = () => {
-    signInWithGitHub()
-      .then((result) => {
         const user = result.user;
-        // setUser(user);
-        console.error(user);
+        console.log(result.user);
+        setAuthToken(user)
         navigate(from, { replace: true });
       })
       .catch((error) => {
@@ -183,7 +173,6 @@ const Login = () => {
                 </button>
 
                 <button
-                  onClick={handleGithubSignIn}
                   aria-label="Log in with GitHub"
                   className="p-3 rounded-sm"
                 >

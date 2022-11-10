@@ -25,7 +25,7 @@ const Services = () => {
       </div>
       <div className="text-center py-6">
         {" "}
-       <Link to={`/servicesAll/${{services}}`}> <button className="btn btn-outline border-orange-400 text-orange-400 hover:text-white-800 hover:bg-orange-500">
+       <Link to={`/services`}> <button className="btn btn-outline border-orange-400 text-orange-400 hover:text-white-800 hover:bg-orange-500">
          See More
         </button></Link>
       </div>

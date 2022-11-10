@@ -5,11 +5,7 @@ const SpecialServiceCard = ({ service }) => {
   return (
     <div className="">
       <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-        {/* <img
-          className="absolute object-cover w-full h-full rounded"
-          src={img1}
-          alt="Person"
-        /> */}
+        
          <PhotoProvider
             speed={() => 800}
             easing={(type) =>

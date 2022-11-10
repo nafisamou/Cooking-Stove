@@ -13,7 +13,7 @@ import {
   themes,
 } from "../../../Context/AuthProvider/ThemeContext";
 
-import img3 from "../../../assets/banner/img-4.jpg";
+import icon from "../../../assets/Icon/icons8-weber-48.png";
 const Header = () => {
   const { user, logout } = useContext(AuthContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +34,7 @@ const Header = () => {
             title="Cooking Stove"
             className="inline-flex items-center"
           >
-            <img className="w-6 h-6 mr-1" src={img3} alt="" />
+            <img className="w-6 h-6 mr-1" src={icon} alt="" />
 
             <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
               Cooking Stove
@@ -58,7 +58,7 @@ const Header = () => {
 
             <li>
               <NavLink
-                to="/service"
+                to="/addService"
                 aria-label="service"
                 title="service"
                 className={({ isActive }) =>
@@ -72,9 +72,9 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/review"
-                aria-label="review"
-                title="review"
+                to="/reviews"
+                aria-label="reviews"
+                title="reviews"
                 className={({ isActive }) =>
                   isActive
                     ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -84,7 +84,7 @@ const Header = () => {
                 My Review
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/faq"
                 aria-label="FAQ"
@@ -97,7 +97,7 @@ const Header = () => {
               >
                 FAQ
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 to="/blog"

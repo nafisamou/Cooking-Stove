@@ -6,15 +6,15 @@ import ErrorPage from "../../pages/ErrorPage/ErrorPage";
 import Home from "../../pages/Home/Home/Home";
 
 import Login from "../../pages/Login/Login";
+import Edit from "../../pages/Review/Edit";
+import Review from "../../pages/Review/Review";
+import AddService from "../../pages/Services/AddService/AddService";
 
-import Orders from "../../pages/Orders/Orders";
 import ServiceAllLoader from "../../pages/Services/ServiceAllLoader";
 import ServiceCardDetails from "../../pages/Services/ServiceCardDetails";
 
-
 import SignUp from "../../pages/SignUp/SignUp";
-
-// import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 export const routes = createBrowserRouter([
   {
@@ -26,7 +26,7 @@ export const routes = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
-    
+
       {
         path: "/services/:id",
         loader: ({ params }) =>
@@ -34,9 +34,8 @@ export const routes = createBrowserRouter([
         element: <ServiceCardDetails></ServiceCardDetails>,
       },
       {
-        path: "/servicesAll/:id",
-        loader: ({ params }) =>
-          fetch(`http://localhost:5000/servicesAll/${params.id}`),
+        path: "/services",
+        loader: () => fetch("http://localhost:5000/servicesAll"),
         element: <ServiceAllLoader></ServiceAllLoader>,
       },
       {
@@ -48,24 +47,28 @@ export const routes = createBrowserRouter([
         element: <SignUp></SignUp>,
       },
       {
+        path: "/edit/:id",
+        loader: ({params}) => fetch(`http://localhost:5000/reviews/${params.id}`),
+        element: <Edit></Edit>,
+      },
+      {
         path: "/checkout/:id",
-        // loader: ({ params }) =>
-        //   fetch(
-        //     `https://m-67-genius-car-server-nafisamou.vercel.app/services/${params.id}`
-        //   ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/services/${params.id}`),
+        element: <Checkout></Checkout>,
+      },
+
+      {
+        path: "/reviews",
         element: (
-          <Checkout></Checkout>
-          //   <PrivateRoute>
-          //   </PrivateRoute>
+          <PrivateRoute>
+            <Review></Review>
+          </PrivateRoute>
         ),
       },
       {
-        path: "/orders",
-        element: (
-          <Orders></Orders>
-          //   <PrivateRoute>
-          //   </PrivateRoute>
-        ),
+        path: "/addService",
+        element: <AddService></AddService>,
       },
       {
         path: "/blog",

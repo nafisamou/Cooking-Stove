@@ -1,6 +1,10 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { Link, useLoaderData } from "react-router-dom";
+import AllReviews from "../AllReviews/AllReviews";
+import Checkout from "../Checkout/Checkout";
+
+
 const ServiceCardDetails = () => {
   const service = useLoaderData();
   const { _id, title, price, details, Items, thumbnail, rating } = service;
@@ -37,14 +41,15 @@ const ServiceCardDetails = () => {
                 <span className="ml-1">{rating}</span>
               </p>
             </p>
-            {/* <div className="card-actions justify-end">
-              <Link to={`/checkout/${_id}`}>
-               
-              </Link>
-            </div> */}
+            <div className="card-actions justify-end">
+              <Link to={`/checkout/${_id}`}>Review</Link>
+            </div>
           </div>
         </div>
       </div>
+      <Checkout></Checkout>
+
+      <AllReviews id={_id}></AllReviews>
     </div>
   );
 };
