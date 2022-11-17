@@ -1,5 +1,5 @@
 import React from "react";
-
+import icon from "../../../assets/Icon/icons8-weber-48.png";
 const Footer = () => {
   return (
     <div>
@@ -9,26 +9,12 @@ const Footer = () => {
           <a
             href="/"
             aria-label="Go home"
-            title="Company"
+            title="Cooking Stove"
             className="inline-flex items-center"
           >
-            <svg
-              className="w-8 text-deep-purple-accent-400"
-              viewBox="0 0 24 24"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeMiterlimit="10"
-              stroke="currentColor"
-              fill="none"
-            >
-              <rect x="3" y="1" width="7" height="12" />
-              <rect x="3" y="17" width="7" height="6" />
-              <rect x="14" y="1" width="7" height="6" />
-              <rect x="14" y="11" width="7" height="12" />
-            </svg>
+          <img className="w-6 h-6 mr-1" src={icon} alt="" />
             <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-              Company
+              Cooking Stove
             </span>
           </a>
           <div className="mt-6 lg:max-w-sm">
@@ -65,7 +51,7 @@ const Footer = () => {
               title="Our email"
               className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
-              info@lorem.mail
+              mou@nafisa.mail
             </a>
           </div>
           <div className="flex">
@@ -121,25 +107,26 @@ const Footer = () => {
       </div>
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
         <p className="text-sm text-gray-600">
-          © Copyright 2020 Lorem Inc. All rights reserved.
+          © Copyright 2022, All rights reserved by Syeda Nafisa Akter Mou.
         </p>
         <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-          <li>
+        <li>
             <a
-              href="/"
+              href="/services"
               className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
-              F.A.Q
+              Services
             </a>
           </li>
           <li>
             <a
-              href="/"
+              href="/blog"
               className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
-              Privacy Policy
+              Blog
             </a>
           </li>
+        
           <li>
             <a
               href="/"

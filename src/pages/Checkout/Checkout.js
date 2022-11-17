@@ -1,12 +1,21 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import toast from "react-hot-toast";
-import { Link, useLoaderData } from "react-router-dom";
+import {
+  Link,
+  useLoaderData,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import useTitle from "../Hooks/useTitle";
 const Checkout = () => {
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+  useTitle("Login");
   const { user } = useContext(AuthContext);
-  const { _id, title, price, quantity, rating } = useLoaderData();
+  const navigate = useNavigate();
+  const { _id, title, price, rating } = useLoaderData();
   console.log(price);
   useTitle("Checkout");
   const handleReview = (event) => {
@@ -16,6 +25,7 @@ const Checkout = () => {
     const email = user?.email || "unregister";
     const phone = form.phone.value;
     const message = form.message.value;
+    const ratings = form.ratings.value;
 
     const review = {
       service: _id,
@@ -25,6 +35,7 @@ const Checkout = () => {
       customer: name,
       email,
       message,
+      ratings
     };
 
     if (phone.length > 11 && phone.length < 11) {
@@ -73,7 +84,7 @@ const Checkout = () => {
               </div>
               <div>
                 <h4 className="font-bold">{user?.displayName}</h4>
-                <span className="text-xs dark:text-gray-400">2 days ago</span>
+                <span className="text-xs dark:text-gray-400">{title}</span>
               </div>
             </div>
 
@@ -119,6 +130,13 @@ const Checkout = () => {
               defaultValue={price}
               className="input input-bordered  w-full "
             />
+            <input
+              name="ratings"
+              type="number"
+              placeholder="Ratings"
+              
+              className="input input-bordered  w-full "
+            />
           </div>
           <div className="flex flex-col w-full">
             <textarea
@@ -152,6 +170,9 @@ const Checkout = () => {
                   <span className=" ">
                     <Link to="/login">
                       Please Login if you want to add a review.
+                      
+                      {navigate(from, { replace: true })}
+                      ;
                     </Link>
                   </span>
                 )}

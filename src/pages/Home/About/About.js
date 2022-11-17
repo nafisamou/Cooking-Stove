@@ -1,4 +1,5 @@
 import React from "react";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 
 const About = () => {
   return (
@@ -126,11 +127,15 @@ const About = () => {
               </div>
             </div>
             <div aria-hidden="true" className="mt-10 lg:mt-0">
-              <img
-                src="https://media.30seconds.com/tip/lg/Fried-Chicken-Recipes-How-to-Make-Classic-Skillet-fried-Ch-14344-fd5f23bd88-1625545998.jpg"
-                alt=""
-                className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 w-[480px] h-[480px] object-center"
-              />
+              <PhotoProvider>
+                <PhotoView src="https://www.layersofhappiness.com/wp-content/uploads/2016/04/homemade-cheddar-chicken-fingers-4.jpg">
+                  <img
+                    src="https://www.layersofhappiness.com/wp-content/uploads/2016/04/homemade-cheddar-chicken-fingers-4.jpg"
+                    alt=""
+                    className="block mx-auto  object-center shadow-lg  rounded-lg  cursor: zoom-in object-cover aspect-square bg-gray-500 w-[400px] h-[500px] "
+                  />
+                </PhotoView>
+              </PhotoProvider>
             </div>
           </div>
           <div>
@@ -246,11 +251,15 @@ const About = () => {
                 </div>
               </div>
               <div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
-                <img
-                  src="https://publish.purewow.net/wp-content/uploads/sites/2/2018/03/mini-chicken-shawarma-recipe-hero.jpg?resize=636%2C460"
-                  alt=""
-                  className="mx-auto rounded-lg shadow-lg dark:bg-gray-500 h-[481px] w-[481px] object-center"
-                />
+                <PhotoProvider>
+                  <PhotoView src="https://www.licious.in/blog/wp-content/uploads/2020/12/Chicken-Shawarma-750x750.jpg">
+                    <img
+                      src="https://www.licious.in/blog/wp-content/uploads/2020/12/Chicken-Shawarma-750x750.jpg"
+                      alt=""
+                      className="block mx-auto  object-center shadow-lg  rounded-lg  cursor: zoom-in object-cover aspect-square bg-gray-500  h-[534px] w-[431px] "
+                    />
+                  </PhotoView>
+                </PhotoProvider>
               </div>
             </div>
           </div>

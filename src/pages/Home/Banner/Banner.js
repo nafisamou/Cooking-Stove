@@ -35,11 +35,7 @@ const Banner = () => {
         </button>
         <div className="flex items-center justify-start w-full h-full gap-6 py-4 mx-auto overflow-auto lg:gap-8">
           <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-            {/* <img
-              className="object-cover object-center h-96 aspect-square dark:bg-gray-500"
-              src={img1}
-              alt="Img-1"
-            /> */}
+           
             <PhotoProvider>
               <PhotoView src={img1}>
                 <img
@@ -51,11 +47,7 @@ const Banner = () => {
             </PhotoProvider>
           </div>
           <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-            {/* <img
-              className="object-cover object-center h-96 aspect-square dark:bg-gray-500"
-              src={img2}
-              alt="Img-2"
-            /> */}
+            
             <PhotoProvider>
               <PhotoView src={img2}>
                 <img

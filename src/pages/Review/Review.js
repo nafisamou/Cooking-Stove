@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import useTitle from "../Hooks/useTitle";
@@ -26,7 +27,7 @@ const Review = () => {
   }, [user?.email, logOut]);
 
   const handleEdit = (id)=>{
-    // navigate(`/reviews/${id}`)
+    navigate(`/reviews/${id}`)
   }
 
   const handleDelete = (id) => {
@@ -38,14 +39,14 @@ const Review = () => {
         method: "DELETE",
 
         headers: {
-          authorization: `Bearer ${localStorage.getItem("genius-token")}`,
+          authorization: `Bearer ${localStorage.getItem("kitchen-token")}`,
         },
       })
         .then((res) => res.json())
         .then((data) => {
           console.log(data);
           if (data.deletedCount > 0) {
-            alert("deleted successfully");
+            toast.error("deleted successfully");
             const remaining = reviews.filter((review) => review._id !== id);
             setReviews(remaining);
           }

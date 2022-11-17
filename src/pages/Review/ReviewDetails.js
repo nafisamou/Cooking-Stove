@@ -10,8 +10,8 @@ const ReviewDetails = ({ review, handleDelete, handleEdit }) => {
     message,
     phone,
     service,
-    _id,
-    status,
+    _id
+
     // img
   } = review;
   const [reviewDetails, setReviewDetails] = useState({});

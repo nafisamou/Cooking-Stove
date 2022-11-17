@@ -1,14 +1,13 @@
 import { useContext } from "react";
-import { Navigate, useLoaderData, useNavigate, useParams } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 
 const Edit = () => {
   const navigate = useNavigate();
   const router = useParams();
-  const { id } = router
+  const { id } = router;
   const review = useLoaderData();
-  // const {id}= review;
   console.log(review);
   const { user } = useContext(AuthContext);
 
@@ -81,7 +80,7 @@ const Edit = () => {
 
         <button
           type="submit"
-          className="w-6/12 py-2 font-semibold rounded bg-violet-400 text-gray-900"
+          className="w-6/12 py-2 font-semibold rounded bg-violet-400 text-gray-900 mx-auto"
         >
           Update
         </button>

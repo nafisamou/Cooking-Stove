@@ -9,7 +9,6 @@ const AddService = () => {
     const form = e.target;
     const title = form.title.value;
     const price = form.price.value;
-
     const details = form.details.value;
     const img = form.img.value;
     // console.log(title, price, photoURL)
@@ -20,7 +19,7 @@ const AddService = () => {
       img,
     };
     console.log(data);
-    fetch("http://localhost:5000/allServices", {
+    fetch("https://server-nafisamou.vercel.app/allServices", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -35,7 +34,7 @@ const AddService = () => {
       });
   };
   return (
-    <div>
+    <div className=" w-6/12  px-6 py-16 rounded-md mx-auto ">
       <form
         onSubmit={handleServicePost}
         className="self-stretch mx-auto space-y-3 ng-untouched ng-pristine ng-valid"
@@ -45,7 +44,8 @@ const AddService = () => {
             name="title"
             type="text"
             placeholder="title"
-            className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5"
+            className="w-full rounded-md focus:ring border focus:ring-violet-400 border-gray-700 p-5"
+            required
           />
         </div>
 
@@ -54,7 +54,7 @@ const AddService = () => {
             name="price"
             type="text"
             placeholder="price"
-            className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5"
+            className="w-full rounded-md focus:ring border focus:ring-violet-400 border-gray-700 p-5"
             required
           />
         </div>
@@ -63,7 +63,7 @@ const AddService = () => {
             name="img"
             type="url"
             placeholder="image url only"
-            className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5"
+            className="w-full rounded-md focus:ring border focus:ring-violet-400 border-gray-700 p-5"
             required
           />
         </div>
@@ -72,15 +72,15 @@ const AddService = () => {
             name="details"
             type="text"
             placeholder="details"
-            className="w-full rounded-md focus:ring focus:ring-violet-400 dark:border-gray-700 p-5"
+            className="w-full rounded-md border focus:ring focus:ring-violet-400 border-gray-700 p-5"
             required
           />
         </div>
         <button
           type="submit"
-          className="w-6/12 py-2 font-semibold rounded dark:bg-violet-400 dark:text-gray-900"
+          className="w-6/12 py-2 mx-10 mt-11 font-semibold rounded bg-violet-400 text-gray-900"
         >
-          Join the waitlist
+          Add Service
         </button>
       </form>
     </div>

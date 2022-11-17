@@ -10,12 +10,12 @@ const Services = () => {
       .then((data) => setServices(data));
   }, []);
   return (
-    <div className="  ">
-      <div className="text-center py-6">
-        {/* <p className="text-orange-400 text-2xl py-2  service-t ">Service</p> */}
-        <h2 className="text-5xl font-semibold services-h">Our Service </h2>
+    <div className=" px-4 py-16  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10 mx-auto ">
+      <div className=" py-6 text-center">
+      
+        <h2 className="text-5xl  services-h py-5">Our Service </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-8 px-10">
+      <div className="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-3  py-8">
         {services.map((service) => (
           <ServiceCard key={service._id} service={service}></ServiceCard>
         ))}
