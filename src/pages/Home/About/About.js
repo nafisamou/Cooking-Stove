@@ -7,7 +7,7 @@ const About = () => {
       <section className="dark:bg-gray-800 dark:text-gray-100">
         <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div>
-            <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-50">
+            <h2 className="text-3xl  tracking-tight text-center sm:text-5xl services-h">
               My Special Items
             </h2>
             <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-gray-400 font-sans">

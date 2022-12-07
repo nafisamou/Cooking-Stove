@@ -59,11 +59,7 @@ const Banner = () => {
             </PhotoProvider>
           </div>
           <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-            {/* <img
-              className="object-cover object-center h-96 aspect-square dark:bg-gray-500"
-              src={img3}
-              alt="Img-3"
-            /> */}
+          
             <PhotoProvider>
               <PhotoView src={img3}>
                 <img
@@ -75,11 +71,7 @@ const Banner = () => {
             </PhotoProvider>
           </div>
           <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-            {/* <img
-              className="object-cover object-center h-96 aspect-square dark:bg-gray-500"
-              src={img4}
-              alt="Img-4"
-            /> */}
+         
             <PhotoProvider>
               <PhotoView src={img4}>
                 <img
@@ -91,11 +83,7 @@ const Banner = () => {
             </PhotoProvider>
           </div>
           <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-            {/* <img
-              className="object-cover object-center h-96 aspect-square dark:bg-gray-500"
-              src={img5}
-              alt="Img-5"
-            /> */}
+          
             <PhotoProvider>
               <PhotoView src={img5}>
                 <img
@@ -107,11 +95,7 @@ const Banner = () => {
             </PhotoProvider>
           </div>
           <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-            {/* <img
-              className="object-cover object-center h-96 aspect-square dark:bg-gray-500"
-              src={img6}
-              alt="Img-6"
-            /> */}
+           
             <PhotoProvider>
               <PhotoView src={img6}>
                 <img

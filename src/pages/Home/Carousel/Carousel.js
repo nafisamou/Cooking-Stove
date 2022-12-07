@@ -15,10 +15,10 @@ const Carousel = () => {
     class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
   >
     <div class="max-w-xl text-center sm:text-left">
-      <h1 class="text-3xl font-extrabold sm:text-5xl">
-        Let us find your
+      <h1 class="text-3xl font-extrabold sm:text-5xl ">
+       <span className='text-gray-700'> Let us find your</span>
 
-        <strong class="block font-extrabold text-rose-700">
+        <strong class="block font-bold text-orange-500 my-2">
           Favorite Food.
         </strong>
       </h1>
@@ -30,14 +30,14 @@ const Carousel = () => {
       <div class="mt-8 flex flex-wrap gap-4 text-center">
         <Link
           to="/services"
-          class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+          class="block w-full rounded bg-orange-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-orange-500 focus:outline-none focus:ring active:bg-orange-500 sm:w-auto"
         >
           Get Started
         </Link>
 
         <Link
           to="blog"
-          class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+          class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-orange-500 shadow hover:text-orange-700 focus:outline-none focus:ring active:text-orange-500 sm:w-auto"
         >
           Learn More
         </Link>
